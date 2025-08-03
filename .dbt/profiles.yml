@@ -1,0 +1,14 @@
+breast_cancer_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: dk73467.eu-central-2.aws        # e.g. dk73467 or dk73467.eu-central-2.aws
+      user: maryambabar # e.g. MARYAMBABAR
+      password: tW4iCvKEThJ4FHn        # your Snowflake password
+      role: ACCOUNTADMIN               # or SYSADMIN or other assigned role
+      database: TEST_DB                # your database name
+      warehouse: COMPUTE_WH            # your warehouse name
+      schema: PUBLIC                   # your schema name
+      threads: 1                      # number of threads for dbt runs
+      client_session_keep_alive: False # keep session alive during runs
